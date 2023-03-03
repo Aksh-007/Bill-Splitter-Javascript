@@ -41,7 +41,7 @@ const calculateBill = () => {
 
   // get the total tip amount
   const totalTipAmount = bill * tipPercentage
-  waiterTipTotal.innerText = Math.ceil(totalTipAmount)
+  waiterTipTotal.innerText = `$${Math.ceil(totalTipAmount)}`
 
   // calculate the total (tip amount + bill)
   const totalBillAmount = bill + totalTipAmount
@@ -50,7 +50,7 @@ const calculateBill = () => {
   const perPersonCost = totalBillAmount / numersOfPeople
 
   // update the perPersonTotal on DOM & show it to user
-  totalPerPerson.innerText = Math.ceil(perPersonCost)
+  totalPerPerson.innerText = `$${Math.ceil(perPersonCost)}`
 }
 
 // ** Splits the bill between more people **
