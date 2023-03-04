@@ -104,11 +104,11 @@ const calculateBill = () => {
 
     let totalTipAmount = billTotal * tipAmount
     // console.log(totalTipAmount)
-    waiterTipDiv.innerText = `$${totalTipAmount}`;
+    waiterTipDiv.innerText = `$${Math.ceil(totalTipAmount)}`
 
     let totalBillAmount = billTotal + totalTipAmount
     // console.log(`TOTAL VILL ${totalBillAmount}`)
-    totalbillDiv.innerText = `$${totalBillAmount}`;
+    totalbillDiv.innerText =`$${Math.ceil(totalBillAmount)}`
 
     let perPersonCost = totalBillAmount / numberOfPeople
     // console.log(`PER PERSON${perPersonCost}`)
