@@ -93,7 +93,7 @@ const waiterTipDiv = document.getElementById('waiterTip');
 const perPersonTotalDiv = document.getElementById('perPersonTotal');
 const totalbillDiv = document.getElementById('totalbill');
 
-let numberOfPeople = Number(numberOfPeopleDiv.innerText );
+let numberOfPeople = Number(numberOfPeopleDiv.innerText);
 
 const calculateBill = () => {
     let billTotal = Number(totalBillDiv.value)
@@ -108,7 +108,7 @@ const calculateBill = () => {
 
     let totalBillAmount = billTotal + totalTipAmount
     // console.log(`TOTAL VILL ${totalBillAmount}`)
-    totalbillDiv.innerText =`$${Math.ceil(totalBillAmount)}`
+    totalbillDiv.innerText = `$${Math.ceil(totalBillAmount)}`
 
     let perPersonCost = totalBillAmount / numberOfPeople
     // console.log(`PER PERSON${perPersonCost}`)
@@ -124,14 +124,23 @@ const increasePeople = () => {
     calculateBill()
 }
 
-const decreasePeople = () =>{
+const decreasePeople = () => {
 
     if (numberOfPeople <= 1) {
-       alert ('Cant set person to negative number');
-       return
+        alert('Cant set person to negative number');
+        return
     }
 
     numberOfPeople -= 1;
     numberOfPeopleDiv.innerText = numberOfPeople
     calculateBill()
+}
+
+const clearInput = () => {
+    totalBillDiv.value = "";
+    tipDiv.value = "";
+    numberOfPeopleDiv.innerText = 1;
+    waiterTipDiv.innerText = `$0.00`;
+    perPersonTotalDiv.innerText =  `$0.00`;;
+    totalbillDiv.innerText =  `$0.00`;;
 }
