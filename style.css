@@ -8,15 +8,17 @@
   }
   
   .wrapper {
-    height: 525px;
-    width: 360px;
+    height: 70vh;
+    width: 40%;
     color: white;
     background: #272639;
     border-radius: 1rem;
     padding: 1.2rem;
     margin: 100px auto;
   }
-  
+  h1{
+    text-align: center;
+  }
   #topContainer {
     margin-top: 4rem;
   }
@@ -40,6 +42,7 @@
   
   #billTotalInput,
   #tipInput {
+    height: 2rem;
     font-size: 1.2rem;
     background: none;
     border: none;
@@ -138,3 +141,10 @@
     display: flex;
     justify-content: center;
    }
+
+   @media screen and (max-width: 600px) {
+   .wrapper{
+    width: 80%;
+    height: auto;
+   }
+  }

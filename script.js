@@ -139,8 +139,9 @@ const decreasePeople = () => {
 const clearInput = () => {
     totalBillDiv.value = "";
     tipDiv.value = "";
-    numberOfPeopleDiv.innerText = 1;
+    numberOfPeopleDiv.innerText = "1";
     waiterTipDiv.innerText = `$0.00`;
     perPersonTotalDiv.innerText =  `$0.00`;;
     totalbillDiv.innerText =  `$0.00`;;
+    calculateBill();
 }
