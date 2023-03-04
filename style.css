@@ -93,6 +93,11 @@
     flex-direction: column;
     align-items: end;
   }
+
+  .totalBill {
+    display: flex;
+    justify-content: space-between;
+  }
   
   .total {
     font-size: 2rem;
