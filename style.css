@@ -76,6 +76,7 @@
   
   .buttonText {
     color: #353959 !important;
+    cursor: pointer;
   }
   
   .splitAmount {
