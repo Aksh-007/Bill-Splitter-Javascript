@@ -104,3 +104,37 @@
     font-size: 2rem;
   }
   
+  .clearButton {
+    background-color: #eee;
+    border: none;
+    padding: 1rem;
+    font-size: 1.2rem;
+    width: 7em;
+    border-radius: 1rem;
+    color: #000;
+    box-shadow: 0 0.4rem #dfd9d9;
+    cursor: pointer;
+   }
+   
+   .clearButton:active {
+    color: white;
+    box-shadow: 0 0.2rem #dfd9d9;
+    transform: translateY(0.2rem);
+   }
+   
+   .clearButton:hover:not(:disabled) {
+    background: lightcoral;
+    color: white;
+    text-shadow: 0 0.1rem #bcb4b4;
+   }
+   
+   .clearButton:disabled {
+    cursor: auto;
+    color: grey;
+   }
+
+   .clearButtonDiv{
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+   }
