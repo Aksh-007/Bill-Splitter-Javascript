@@ -25,7 +25,8 @@ const calculateBill = () => {
 
     let perPersonCost = totalBillAmount / numberOfPeople
     // console.log(`PER PERSON${perPersonCost}`)
-    perPersonTotalDiv.innerText = `$${Math.ceil(perPersonCost)}`
+
+    perPersonTotalDiv.innerText = `${Math.ceil(perPersonCost)}`
 
 }
 
