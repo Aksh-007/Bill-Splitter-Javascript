@@ -55,8 +55,8 @@ const clearInput = () => {
     tipDiv.value = "";
     numberOfPeopleDiv.innerText = `${Number(1)}`;
     numberOfPeople = 1
-    waiterTipDiv.innerText = `$0.00`;
-    perPersonTotalDiv.innerText =  `$0.00`;;
-    totalbillDiv.innerText =  `$0.00`;;
+    waiterTipDiv.innerText = `₹0.00`;
+    perPersonTotalDiv.innerText =  `₹0.00`;;
+    totalbillDiv.innerText =  `₹0.00`;;
     // calculateBill();
 }
